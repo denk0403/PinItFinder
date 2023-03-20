@@ -14,6 +14,8 @@
 		46A96EF629C5EB4700FAA626 /* PinItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96EF529C5EB4700FAA626 /* PinItTests.swift */; };
 		46A96F0029C5EB4700FAA626 /* PinItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96EFF29C5EB4700FAA626 /* PinItUITests.swift */; };
 		46A96F0229C5EB4700FAA626 /* PinItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96F0129C5EB4700FAA626 /* PinItUITestsLaunchTests.swift */; };
+		46A96F1529C5EB5F00FAA626 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A96F1429C5EB5F00FAA626 /* FinderSync.swift */; };
+		46A96F1A29C5EB5F00FAA626 /* PinItFinder.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 46A96F1229C5EB5F00FAA626 /* PinItFinder.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = 46A96EDF29C5EB4400FAA626;
 			remoteInfo = PinIt;
 		};
+		46A96F1829C5EB5F00FAA626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A96ED829C5EB4300FAA626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A96F1129C5EB5E00FAA626;
+			remoteInfo = PinItFinder;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46A96F1E29C5EB5F00FAA626 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46A96F1A29C5EB5F00FAA626 /* PinItFinder.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		46A96EE029C5EB4400FAA626 /* PinIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +68,10 @@
 		46A96EFB29C5EB4700FAA626 /* PinItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A96EFF29C5EB4700FAA626 /* PinItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinItUITests.swift; sourceTree = "<group>"; };
 		46A96F0129C5EB4700FAA626 /* PinItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinItUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46A96F1229C5EB5F00FAA626 /* PinItFinder.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PinItFinder.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A96F1429C5EB5F00FAA626 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		46A96F1629C5EB5F00FAA626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A96F1729C5EB5F00FAA626 /* PinItFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PinItFinder.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46A96F0F29C5EB5E00FAA626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +112,7 @@
 				46A96EE229C5EB4400FAA626 /* PinIt */,
 				46A96EF429C5EB4700FAA626 /* PinItTests */,
 				46A96EFE29C5EB4700FAA626 /* PinItUITests */,
+				46A96F1329C5EB5F00FAA626 /* PinItFinder */,
 				46A96EE129C5EB4400FAA626 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +123,7 @@
 				46A96EE029C5EB4400FAA626 /* PinIt.app */,
 				46A96EF129C5EB4700FAA626 /* PinItTests.xctest */,
 				46A96EFB29C5EB4700FAA626 /* PinItUITests.xctest */,
+				46A96F1229C5EB5F00FAA626 /* PinItFinder.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +165,16 @@
 			path = PinItUITests;
 			sourceTree = "<group>";
 		};
+		46A96F1329C5EB5F00FAA626 /* PinItFinder */ = {
+			isa = PBXGroup;
+			children = (
+				46A96F1429C5EB5F00FAA626 /* FinderSync.swift */,
+				46A96F1629C5EB5F00FAA626 /* Info.plist */,
+				46A96F1729C5EB5F00FAA626 /* PinItFinder.entitlements */,
+			);
+			path = PinItFinder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +185,12 @@
 				46A96EDC29C5EB4400FAA626 /* Sources */,
 				46A96EDD29C5EB4400FAA626 /* Frameworks */,
 				46A96EDE29C5EB4400FAA626 /* Resources */,
+				46A96F1E29C5EB5F00FAA626 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46A96F1929C5EB5F00FAA626 /* PBXTargetDependency */,
 			);
 			name = PinIt;
 			productName = PinIt;
@@ -185,6 +233,23 @@
 			productReference = 46A96EFB29C5EB4700FAA626 /* PinItUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		46A96F1129C5EB5E00FAA626 /* PinItFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A96F1B29C5EB5F00FAA626 /* Build configuration list for PBXNativeTarget "PinItFinder" */;
+			buildPhases = (
+				46A96F0E29C5EB5E00FAA626 /* Sources */,
+				46A96F0F29C5EB5E00FAA626 /* Frameworks */,
+				46A96F1029C5EB5E00FAA626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinItFinder;
+			productName = PinItFinder;
+			productReference = 46A96F1229C5EB5F00FAA626 /* PinItFinder.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +271,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 46A96EDF29C5EB4400FAA626;
 					};
+					46A96F1129C5EB5E00FAA626 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 46A96EDB29C5EB4300FAA626 /* Build configuration list for PBXProject "PinIt" */;
@@ -224,6 +292,7 @@
 				46A96EDF29C5EB4400FAA626 /* PinIt */,
 				46A96EF029C5EB4700FAA626 /* PinItTests */,
 				46A96EFA29C5EB4700FAA626 /* PinItUITests */,
+				46A96F1129C5EB5E00FAA626 /* PinItFinder */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +315,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		46A96EF929C5EB4700FAA626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A96F1029C5EB5E00FAA626 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +357,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46A96F0E29C5EB5E00FAA626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A96F1529C5EB5F00FAA626 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +377,11 @@
 			isa = PBXTargetDependency;
 			target = 46A96EDF29C5EB4400FAA626 /* PinIt */;
 			targetProxy = 46A96EFC29C5EB4700FAA626 /* PBXContainerItemProxy */;
+		};
+		46A96F1929C5EB5F00FAA626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46A96F1129C5EB5E00FAA626 /* PinItFinder */;
+			targetProxy = 46A96F1829C5EB5F00FAA626 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,6 +502,7 @@
 		46A96F0629C5EB4700FAA626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PinIt/PinIt.entitlements;
@@ -424,12 +514,16 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PinIt;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				"NEW_SETTING[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kats.PinIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -440,6 +534,7 @@
 		46A96F0729C5EB4700FAA626 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PinIt/PinIt.entitlements;
@@ -451,12 +546,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PinIt;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kats.PinIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -536,6 +634,60 @@
 			};
 			name = Release;
 		};
+		46A96F1C29C5EB5F00FAA626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PinItFinder/PinItFinder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5CQ296M7NY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinItFinder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PinItFinder;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kats.PinIt.PinItFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46A96F1D29C5EB5F00FAA626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PinItFinder/PinItFinder.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5CQ296M7NY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinItFinder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PinItFinder;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kats.PinIt.PinItFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +723,15 @@
 			buildConfigurations = (
 				46A96F0C29C5EB4700FAA626 /* Debug */,
 				46A96F0D29C5EB4700FAA626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A96F1B29C5EB5F00FAA626 /* Build configuration list for PBXNativeTarget "PinItFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A96F1C29C5EB5F00FAA626 /* Debug */,
+				46A96F1D29C5EB5F00FAA626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
